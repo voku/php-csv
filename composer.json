@@ -3,6 +3,7 @@
 	"description": "PHP-CSV reader and writer",
 	"homepage": "https://github.com/voku/php-csv/",
 	"license": "MIT",
+    "type": "library",
     "require":{
         "php":">=5.2.4"
     },
