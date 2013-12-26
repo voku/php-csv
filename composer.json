@@ -3,7 +3,11 @@
 	"description": "PHP-CSV reader and writer",
 	"homepage": "https://github.com/voku/php-csv/",
 	"license": "MIT",
+    "require":{
+        "php":">=5.2.4"
+    },
     "autoload": {
-        "psr-0": { "CsvFile": "src/" }
+        "classmap":["CsvFile.php"],
+        "files": ["CsvFile.php"]
     }
 }
