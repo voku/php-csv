@@ -46,7 +46,7 @@ mv ./composer.phar ~/bin/composer # or /usr/local/bin/composer
 ```json
 {
     "require": {
-        "php-csv": "dev-master"
+		"voku/php-csv": "dev-master"
     }
 }
 ```
