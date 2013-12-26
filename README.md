@@ -1,11 +1,11 @@
-# Keboola CSV reader/writer [![Build Status](https://secure.travis-ci.org/keboola/php-csv.png)](http://travis-ci.org/keboola/php-csv)
+# PHP-CSV reader/writer [![Build Status](https://secure.travis-ci.org/keboola/php-csv.png)](http://travis-ci.org/keboola/php-csv)
 
 ## Usage
 
 ### Read CSV
 
 ```php
-$csvFile = new Keboola\Csv\CsvFile(__DIR__ . '/_data/test-input.csv');
+$csvFile = new CsvFile(__DIR__ . '/_data/test-input.csv');
 foreach($csvFile as $row) {
 	var_dump($row);
 }
@@ -14,7 +14,7 @@ foreach($csvFile as $row) {
 ### Write CSV
 
 ```php
-$csvFile = new Keboola\Csv\CsvFile(__DIR__ . '/_data/test-output.csv');
+$csvFile = new CsvFile(__DIR__ . '/_data/test-output.csv');
 $rows = array(
 	array(
 		'col1', 'col2',
@@ -47,7 +47,7 @@ mv ./composer.phar ~/bin/composer # or /usr/local/bin/composer
 {
     "require": {
         "php" : ">=5.3.2",
-        "keboola/csv": "1.0.*"
+        "voku/csv": "1.0.*"
     }
 }
 ```
